@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.10.
 
+## JSON Server
+
+Run `npm run server` for a fake REST API. navigate to `http://localhost:3000`. The serve will show every call in the logs.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
