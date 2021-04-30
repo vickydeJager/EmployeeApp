@@ -1,0 +1,44 @@
+<mat-dialog-content class="form" [formGroup]="profileForm">
+  <mat-form-field>
+    <label>
+      Name:
+      <input type="text" formControlName="name">
+    </label>
+  </mat-form-field>
+  <mat-form-field>
+    <label>
+      Surname:
+      <input type="text" formControlName="surname">
+    </label>
+  </mat-form-field>
+  <mat-form-field>
+    <label>
+      Job Title:
+      <input type="text" formControlName="jobTitle">
+    </label>
+  </mat-form-field>
+  <mat-form-field>
+    <label>
+      Email:
+      <input type="text" formControlName="email">
+    </label>
+  </mat-form-field>
+  <mat-form-field>
+    <label>
+      Residential Address:
+      <input type="text" formControlName="residentialAddress">
+    </label>
+  </mat-form-field>
+  <mat-form-field>
+    <label> Work Address: </label>
+    <select id="workAddress" formControlName="workAddress">
+      <option value="LosAngeles">Los Angeles</option>
+      <option value="CapeTown">Cape Town</option>
+      <option value="London">London</option>
+    </select>
+  </mat-form-field>
+  <mat-dialog-actions>
+    <button type="submit" class="button"(click)="onSubmit()">Submit</button>
+    <button type="button" class="button" (click)="close()">Close</button>
+  </mat-dialog-actions>
+</mat-dialog-content>

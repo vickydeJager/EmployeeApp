@@ -1,0 +1,21 @@
+<div class="layout-container">
+  <div class="nav-container">
+    <ul>
+      <li>
+        <a routerLink="employees">Employees</a>
+      </li>
+      <li>
+        <a routerLink="profile">Profile</a>
+      </li>
+      <li>
+        <a href="#" onclick="signOut();">Sign out</a>
+      </li>
+      <li>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+      </li>
+    </ul>
+  </div>
+  <div class="content-container">
+    <router-outlet></router-outlet>
+  </div>
+</div>

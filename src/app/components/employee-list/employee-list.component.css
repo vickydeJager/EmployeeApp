@@ -1,0 +1,130 @@
+table {
+  width: 100%;
+}
+
+tr.example-detail-row {
+  height: 0;
+}
+
+tr.example-element-row:not(.example-expanded-row):hover {
+  background: whitesmoke;
+}
+
+tr.example-element-row:not(.example-expanded-row):active {
+  background: #efefef;
+}
+
+.example-element-row td {
+  border-bottom-width: 0;
+}
+
+.example-element-detail {
+  overflow: hidden;
+  display: flex;
+}
+
+.example-element-diagram {
+  min-width: 80px;
+  border: 2px solid black;
+  padding: 8px;
+  font-weight: lighter;
+  margin: 8px 0;
+  height: 104px;
+}
+
+.example-element-symbol {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: normal;
+}
+
+.example-element-description {
+  padding: 16px;
+}
+
+.example-element-description-attribution {
+  opacity: 0.5;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+td,
+th {
+  width: 25%;
+}
+
+.btn-add-postion {
+  float: right;
+}
+
+.button-add {
+  border: 1px solid #e7e7e7;
+  border-radius: 4px;
+  background-color: #f3f3f3;
+  color: black;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px 0;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.button-add:hover {
+  background-color: #96edf8;
+}
+
+.button{
+  border: 1px solid #e7e7e7;
+  border-radius: 4px;
+  background-color: #f3f3f3;
+  color: black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button-edit:hover {
+  background-color: #b5f896;
+}
+
+.button-remove:hover {
+  background-color: #e25f5f;
+}
+
+.button-search:hover {
+  background-color: #eef3d3;
+}
+
+.divider {
+  height: 20px;
+  border-right: 1px solid black;
+}
+
+.lbl {
+  font-weight: 500;
+  float: left;
+}
+
+input {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.emp-action{
+  display: flex;
+  justify-content: space-between;
+}

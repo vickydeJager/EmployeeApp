@@ -1,0 +1,42 @@
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  <div class="formcontrol">
+    <label>
+      Name:
+      <input type="text" formControlName="name" required>
+    </label>
+  </div>
+  <div class="formcontrol">
+    <label>
+      surname:
+      <input type="text" formControlName="surname">
+    </label>
+  </div>
+  <div class="formcontrol">
+    <label>
+      Job Title:
+      <input type="text" formControlName="jobTitle">
+    </label>
+  </div>
+  <div class="formcontrol">
+    <label>
+      Email:
+      <input type="text" formControlName="email">
+    </label>
+  </div>
+  <div class="formcontrol">
+    <label>
+      Residential Address:
+      <input type="text" formControlName="residentialAddress">
+    </label>
+  </div>
+  <div class="formcontrol">
+    <label> Work Address: </label>
+    <select id="workAddress" formControlName="workAddress">
+      <option value="LosAngeles">Los Angeles</option>
+      <option value="CapeTown">Cape Town</option>
+      <option value="London">London</option>
+    </select>
+  </div>
+
+  <button type="submit">Submit</button>
+</form>

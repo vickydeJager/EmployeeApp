@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>EmployeeApp</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-signin-client_id" content="150025959967-a6bkbpr62b0piact1gngckqp1cthodfv..apps.googleusercontent.com">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <meta name="google-signin-client_id" content="150025959967-a6bkbpr62b0piact1gngckqp1cthodfv.apps.googleusercontent.com">
+  <script>
+    if (global === undefined) {
+      var global = window;
+    }
+  </script>
+  <script>
+    function signOut() {
+      var auth2 = gapi.auth2.getAuthInstance();
+      auth2.signOut().then(function () {
+        console.log('User signed out.');
+      });
+    };
+    function onSignIn(googleUser) {
+    var profile = googleUser.getBasicProfile();
+    console.warn('profile');
+    console.warn(profile);
+    console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+    console.log('Name: ' + profile.getName());
+    console.log('Image URL: ' + profile.getImageUrl());
+    console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+  }
+  </script>
+</head>
+<body class="mat-typography">
+  <app-root></app-root>
+</body>
+</html>

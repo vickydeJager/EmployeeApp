@@ -1,0 +1,26 @@
+.button {
+  border: 1px solid #e7e7e7;
+  border-radius: 4px;
+  background-color: #f3f3f3;
+  color: black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #96edf8;
+}
+
+.form {
+  height: 350px;
+}
+
+mat-form-field:before {
+  content: '\a';
+  white-space: pre;
+}
